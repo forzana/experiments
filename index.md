@@ -1,5 +1,9 @@
-<div id="text"></div>
- 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 <script>
-document.getElementById("text").innerHTML = "Text added by JavaScript code";
+    $().ready(function() {
+    $("#text").html("Text added by jQuery code.");
+    });
 </script>
+ 
+<div id="text"></div>
