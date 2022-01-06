@@ -16,13 +16,7 @@ $().ready(function() {
 
 <script>
 window.configVariables = {
-stripePubKey: '',
-stripeConnectKey: '',
-facebookClientID: '',
-trinityApiUrl: '',
-trinityApiKey: '',
-nodeEnvironment: 'DEVELOPMENT',
-fromAdminSide: ''
+nodeEnvironment: 'DEVELOPMENT'
 }
 </script>
   
