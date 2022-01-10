@@ -3,7 +3,7 @@
 <script>
 $().ready(function() {
 
-	$.get("https://dev-rhodes.embark.com/embeddedProspects/form/rhodes/vca", function( data ) {
+	$.get("https://stg-rhodes.embark.com/embeddedProspects/form/rhodes/newadmintest", function( data ) {
 		console.log(data);
 		console.log("hello");
 		$("#inquiryForm").html(data);
