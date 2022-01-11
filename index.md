@@ -14,4 +14,9 @@ $().ready(function() {
  
 <div id="inquiryForm"></div>
 
+<div>
+	<style scoped>p {color: red;}</style>
+	<p>Red.</p>
+</div>
+<p> Not red?</p>
 <br />
