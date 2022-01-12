@@ -2,7 +2,7 @@
 
 <script>
 $().ready(function() {
-	$.get("https://dev-rhodes.embark.com/embeddedProspects/form/rhodes/vca", function( data ) {
+	$.post("https://dev-rhodes.embark.com/embeddedProspects/form/rhodes/vca", {content: {cscField: 'East Africa', cscField__NAME__: 'East Africa'}}, function( data ) {
 		console.log(data);
 		console.log("hello");
 		$("#inquiryForm").html(data);
