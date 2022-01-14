@@ -1,9 +1,11 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 <script>
-$.post("https://dev-rhodes.embark.com/embeddedProspects/form/rhodes/vca", {content: {cscField: 'East Africa', cscField__NAME__: 'East Africa'}}, function( data ) {
-	console.log("Outside of ready", data);
-	$("#inquiryForm2").html(data);
+$().ready(function() {	
+	$.post("https://dev-rhodes.embark.com/embeddedProspects/form/rhodes/vca", {content: {cscField: 'East Africa', cscField__NAME__: 'East Africa'}}, function( data ) {
+		console.log("Outside of ready", data);
+		$("#inquiryForm2").html(data);
+	});
 });
 </script>
  
