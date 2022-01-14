@@ -3,13 +3,13 @@
 <script>
 $().ready(function() {
 	$.post("https://dev-rhodes.embark.com/embeddedProspects/form/rhodes/vca", {content: {cscField: 'East Africa', cscField__NAME__: 'East Africa'}}, function( data ) {
-		console.log("Ready");
+		console.log("Ready", data);
 		$("#inquiryForm").html(data);
 	});
 });
 	
 $.post("https://dev-rhodes.embark.com/embeddedProspects/form/rhodes/vca", {content: {cscField: 'East Africa', cscField__NAME__: 'East Africa'}}, function( data ) {
-	console.log("Outside of ready");
+	console.log("Outside of ready", data);
 	$("#inquiryForm2").html(data);
 });
 </script>
